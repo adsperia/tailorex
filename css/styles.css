@@ -18,6 +18,10 @@
     background: var(--gradient-hero);
 }
 
+.bg-accent-gradient {
+    background: var(--gradient-accent);
+}
+
 /* Smooth scroll */
 html {
     scroll-behavior: smooth;

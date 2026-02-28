@@ -88,9 +88,11 @@
     return `
       <footer class="py-12 bg-hero-gradient text-primary-foreground">
         <div class="container mx-auto px-4">
-          <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="flex items-center gap-4">
-              <img src="assets/tailorex-logo-white.png" alt="TailorEx" class="h-10">
+          <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-6 text-center md:text-left">
+            <div class="flex items-center justify-center md:justify-start gap-4">
+              <a href="/" class="relative z-10">
+                <img src="assets/tailorex-logo-white.png" alt="TailorEx" class="h-10">
+              </a>
               <div>
                 <p class="text-sm text-primary-foreground/70">Enterprise Technology Solutions</p>
               </div>
@@ -100,8 +102,9 @@
               <a href="/about" class="text-primary-foreground/70 hover:text-primary-foreground transition-colors">About Us</a>
               <a href="/contact" class="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Contact</a>
               <a href="/privacy" class="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Privacy Policy</a>
+              <a href="/cookies" class="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Cookies</a>
             </div>
-            <p class="text-sm text-primary-foreground/50">&copy; ${year} TailorEx. All rights reserved.</p>
+            <p class="text-sm text-primary-foreground/50 md:text-right">&copy; ${year} TailorEx. All rights reserved.</p>
           </div>
         </div>
       </footer>`;
