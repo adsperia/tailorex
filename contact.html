@@ -44,11 +44,13 @@
             <div class="container mx-auto px-4">
                 <div class="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
                     <div>
-                        <h2 class="font-display text-2xl font-bold text-foreground mb-6">Get in Touch</h2>
-                        <p class="text-muted-foreground mb-8">Have questions about our services? We're here to help.
+                        <h2 class="font-display text-2xl font-bold text-foreground mb-6 animate-fade-up"
+                            style="animation-delay: 0.1s;">Get in Touch</h2>
+                        <p class="text-muted-foreground mb-8 animate-fade-up" style="animation-delay: 0.2s;">
+                            Have questions about our services? We're here to help.
                             Reach out through any of these channels or fill out the form.</p>
                         <div class="space-y-6">
-                            <div class="group flex items-start gap-4">
+                            <div class="group flex items-start gap-4 animate-fade-up" style="animation-delay: 0.3s;">
                                 <div
                                     class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent-gradient group-hover:scale-110 transition-all duration-300">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -64,7 +66,7 @@
                                     <p class="text-muted-foreground">info@tailorexllc.com</p>
                                 </div>
                             </div>
-                            <div class="group flex items-start gap-4">
+                            <div class="group flex items-start gap-4 animate-fade-up" style="animation-delay: 0.4s;">
                                 <div
                                     class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent-gradient group-hover:scale-110 transition-all duration-300">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -81,7 +83,7 @@
                                     <p class="text-muted-foreground">+1 (713) 540 - 7797</p>
                                 </div>
                             </div>
-                            <div class="group flex items-start gap-4">
+                            <div class="group flex items-start gap-4 animate-fade-up" style="animation-delay: 0.5s;">
                                 <div
                                     class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent-gradient group-hover:scale-110 transition-all duration-300">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -99,7 +101,7 @@
                                     <p class="text-muted-foreground">Houston, TX</p>
                                 </div>
                             </div>
-                            <div class="group flex items-start gap-4">
+                            <div class="group flex items-start gap-4 animate-fade-up" style="animation-delay: 0.6s;">
                                 <div
                                     class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent-gradient group-hover:scale-110 transition-all duration-300">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -117,57 +119,57 @@
                             </div>
                         </div>
                     </div>
-                    <div class="relative">
+                    <div class="relative animate-fade-up" style="animation-delay: 0.4s;">
                         <div class="absolute -inset-4 bg-accent-gradient rounded-3xl opacity-5 blur-2xl"></div>
                         <div class="relative bg-card rounded-2xl p-8 shadow-elevated border border-border">
                             <h2 class="font-display text-2xl font-bold text-foreground mb-6">Request a Consultation</h2>
-                            <form class="space-y-5">
+                            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+                                <input type="hidden" name="access_key" value="aad82839-e87b-439f-b63e-4fa1680b0bbf">
+                                <input type="hidden" name="subject" value="New Contact Form Submission - TailorEx">
+                                <input type="hidden" name="from_name" value="TailorEx Website">
+                                <input type="hidden" name="redirect" id="redirect-url" value="">
+                                <script>document.getElementById('redirect-url').value = window.location.origin.replace('http:', 'https:') + '/thanks.html';</script>
+                                <input type="checkbox" name="botcheck" class="hidden" style="display:none">
                                 <div class="grid md:grid-cols-2 gap-4">
                                     <div><label class="text-sm font-medium text-foreground mb-2 block">Full Name
-                                            *</label><input
+                                            *</label><input name="name"
                                             class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                                            placeholder="John Doe" required="" value=""></div>
+                                            placeholder="John Doe" required></div>
                                     <div><label class="text-sm font-medium text-foreground mb-2 block">Email Address
-                                            *</label><input type="email"
+                                            *</label><input type="email" name="email"
                                             class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                                            placeholder="john@company.com" required="" value=""></div>
+                                            placeholder="john@company.com" required></div>
                                 </div>
                                 <div class="grid md:grid-cols-2 gap-4">
                                     <div><label class="text-sm font-medium text-foreground mb-2 block">Phone
-                                            Number</label><input type="tel"
+                                            Number</label><input type="tel" name="phone"
                                             class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                                            placeholder="+1 (555) 000-0000" value=""></div>
+                                            placeholder="+1 (555) 000-0000"></div>
                                     <div><label class="text-sm font-medium text-foreground mb-2 block">Company Size
-                                            *</label><button type="button" role="combobox" aria-controls="radix-:r0:"
-                                            aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="closed"
-                                            data-placeholder=""
-                                            class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&amp;&gt;span]:line-clamp-1"><span
-                                                style="pointer-events: none;">Select company size</span><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="lucide lucide-chevron-down h-4 w-4 opacity-50"
-                                                aria-hidden="true">
-                                                <path d="m6 9 6 6 6-6"></path>
-                                            </svg></button><select aria-hidden="true" tabindex="-1"
-                                            style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+                                            *</label>
+                                        <select name="company_size" required
+                                            class="flex h-10 w-full items-center rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 appearance-none"
+                                            style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%239ca3af%22 stroke-width=%222%22><path d=%22m6 9 6 6 6-6%22/></svg>'); background-repeat: no-repeat; background-position: right 0.75rem center;">
+                                            <option value="" disabled selected>Select company size</option>
                                             <option value="1-10 employees">1-10 employees</option>
                                             <option value="11-50 employees">11-50 employees</option>
                                             <option value="51-200 employees">51-200 employees</option>
                                             <option value="201-500 employees">201-500 employees</option>
                                             <option value="500+ employees">500+ employees</option>
-                                        </select></div>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div><label
                                         class="text-sm font-medium text-foreground mb-2 block">Industry</label><input
+                                        name="industry"
                                         class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                                        placeholder="e.g., Manufacturing, Retail, Healthcare" value=""></div>
+                                        placeholder="e.g., Manufacturing, Retail, Healthcare"></div>
                                 <div><label class="text-sm font-medium text-foreground mb-2 block">How can we help?
-                                        *</label><textarea
+                                        *</label><textarea name="message"
                                         class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[120px] resize-none"
-                                        placeholder="Tell us about your project and goals..." required=""></textarea>
+                                        placeholder="Tell us about your project and goals..." required></textarea>
                                 </div><button
-                                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 shadow-soft hover:shadow-elevated h-14 rounded-xl px-8 text-base w-full"
+                                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 shadow-soft hover:shadow-elevated h-14 rounded-xl px-8 text-base w-full"
                                     type="submit">Send Message</button>
                             </form>
                         </div>

@@ -28,19 +28,19 @@
                 <div class="absolute inset-0 bg-gradient-to-b from-secondary/40 via-transparent to-secondary/60"></div>
             </div>
             <div class="relative z-10 container mx-auto px-4 text-center">
-                <div class="flex justify-center mb-8 opacity-0 animate-fade-up" style="animation-delay: 0.1s;">
+                <div class="flex justify-center mb-8 animate-fade-up" style="animation-delay: 0.1s;">
                     <div class="inline-flex items-center gap-2"><span class="w-8 h-px bg-primary"></span><span
                             class="text-sm text-white/80 font-medium tracking-widest uppercase">Enterprise Technology
                             Consulting</span><span class="w-8 h-px bg-primary"></span></div>
                 </div>
-                <h1 class="font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-8 max-w-5xl mx-auto opacity-0 animate-fade-up"
+                <h1 class="font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-8 max-w-5xl mx-auto animate-fade-up"
                     style="animation-delay: 0.2s;">We design digital evolution to deliver transformation, <span
                         style="color: hsl(var(--primary));">not just implement software</span></h1>
-                <p class="text-lg md:text-xl lg:text-2xl text-white/70 max-w-2xl mx-auto mb-12 opacity-0 animate-fade-up"
+                <p class="text-lg md:text-xl lg:text-2xl text-white/70 max-w-2xl mx-auto mb-12 animate-fade-up"
                     style="animation-delay: 0.3s;">Digital Evolution is the intentional redesign of how an organization
                     operates and delivers value using ERP and digital technology, so performance improves, not just the
                     tools.</p>
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-up"
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up"
                     style="animation-delay: 0.4s;"><button
                         class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-elevated h-16 rounded-xl px-10 text-lg shadow-lg shadow-primary/25">Request
                         a Strategic Assessment<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -67,7 +67,7 @@
                         when technology enables measurable changes in:</p>
                 </div>
                 <div class="max-w-6xl mx-auto">
-                    <div class="hidden md:flex gap-2 h-[340px]">
+                    <div class="hidden md:flex gap-2 h-[340px]" id="evolution-panels">
                         <div class="relative rounded-2xl border border-border cursor-pointer transition-all duration-500 ease-out overflow-hidden group flex-[3]"
                             style="background: linear-gradient(135deg, hsl(var(--primary) / 0.12), hsl(var(--primary) / 0.04));">
                             <span
@@ -349,14 +349,14 @@
                 class="absolute bottom-0 right-0 w-96 h-96 bg-[hsl(var(--soft-rose))]/10 rounded-full blur-3xl translate-x-1/3 translate-y-1/3">
             </div>
             <div class="container mx-auto px-4 relative z-10">
-                <div class="text-center mb-12 opacity-0 animate-fade-up"><span
+                <div class="text-center mb-12 animate-fade-up"><span
                         class="inline-block px-4 py-1.5 rounded-full bg-primary text-primary-foreground text-sm font-medium mb-4">Our
                         Impact</span>
                     <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground">Proven Industrial Expertise
                     </h2>
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-5xl mx-auto">
-                    <div class="group relative bg-background border border-border/50 rounded-2xl p-6 text-center hover:border-primary/30 hover:shadow-soft transition-all duration-300 opacity-0 animate-fade-up"
+                    <div class="group relative bg-background border border-border/50 rounded-2xl p-6 text-center hover:border-primary/30 hover:shadow-soft transition-all duration-300 animate-fade-up"
                         style="animation-delay: 0.1s;">
                         <div
                             class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -374,7 +374,7 @@
                             class="absolute top-0 right-0 w-16 h-16 bg-primary/10 rounded-bl-3xl rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
-                    <div class="group relative bg-background border border-border/50 rounded-2xl p-6 text-center hover:border-primary/30 hover:shadow-soft transition-all duration-300 opacity-0 animate-fade-up"
+                    <div class="group relative bg-background border border-border/50 rounded-2xl p-6 text-center hover:border-primary/30 hover:shadow-soft transition-all duration-300 animate-fade-up"
                         style="animation-delay: 0.2s;">
                         <div
                             class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -397,7 +397,7 @@
                             class="absolute top-0 right-0 w-16 h-16 bg-primary/10 rounded-bl-3xl rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
-                    <div class="group relative bg-background border border-border/50 rounded-2xl p-6 text-center hover:border-primary/30 hover:shadow-soft transition-all duration-300 opacity-0 animate-fade-up"
+                    <div class="group relative bg-background border border-border/50 rounded-2xl p-6 text-center hover:border-primary/30 hover:shadow-soft transition-all duration-300 animate-fade-up"
                         style="animation-delay: 0.3s;">
                         <div
                             class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -416,7 +416,7 @@
                             class="absolute top-0 right-0 w-16 h-16 bg-primary/10 rounded-bl-3xl rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
                     </div>
-                    <div class="group relative bg-background border border-border/50 rounded-2xl p-6 text-center hover:border-primary/30 hover:shadow-soft transition-all duration-300 opacity-0 animate-fade-up"
+                    <div class="group relative bg-background border border-border/50 rounded-2xl p-6 text-center hover:border-primary/30 hover:shadow-soft transition-all duration-300 animate-fade-up"
                         style="animation-delay: 0.4s;">
                         <div
                             class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -490,7 +490,7 @@
                                 stroke-opacity="0.35" fill="none"></path>
                         </svg>
                         <div class="relative z-10 grid grid-cols-4 gap-8">
-                            <div class="flex flex-col items-center text-center opacity-0 animate-fade-up"
+                            <div class="flex flex-col items-center text-center animate-fade-up"
                                 style="animation-delay: 0.1s;">
                                 <div class="relative mb-8 z-10">
                                     <div
@@ -534,7 +534,7 @@
                                         Blueprint</li>
                                 </ul>
                             </div>
-                            <div class="flex flex-col items-center text-center opacity-0 animate-fade-up"
+                            <div class="flex flex-col items-center text-center animate-fade-up"
                                 style="animation-delay: 0.25s;">
                                 <div class="relative mb-8 z-10">
                                     <div
@@ -570,7 +570,7 @@
                                         &amp; Hypercare</li>
                                 </ul>
                             </div>
-                            <div class="flex flex-col items-center text-center opacity-0 animate-fade-up"
+                            <div class="flex flex-col items-center text-center animate-fade-up"
                                 style="animation-delay: 0.4s;">
                                 <div class="relative mb-8 z-10">
                                     <div
@@ -608,7 +608,7 @@
                                         Visibility</li>
                                 </ul>
                             </div>
-                            <div class="flex flex-col items-center text-center opacity-0 animate-fade-up"
+                            <div class="flex flex-col items-center text-center animate-fade-up"
                                 style="animation-delay: 0.55s;">
                                 <div class="relative mb-8 z-10">
                                     <div
@@ -1490,63 +1490,61 @@
                             </div>
                         </div>
                         <div class="bg-card rounded-2xl p-8 shadow-elevated border border-border">
-                            <form class="space-y-6">
+                            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                                <input type="hidden" name="access_key" value="aad82839-e87b-439f-b63e-4fa1680b0bbf">
+                                <input type="hidden" name="subject" value="New Consultation Request - TailorEx (Home)">
+                                <input type="hidden" name="from_name" value="TailorEx Website">
+                                <input type="hidden" name="redirect" id="redirect-url-home" value="">
+                                <script>document.getElementById('redirect-url-home').value = window.location.origin.replace('http:', 'https:') + '/thanks.html';</script>
+                                <input type="checkbox" name="botcheck" class="hidden" style="display:none">
                                 <div class="grid sm:grid-cols-2 gap-4">
                                     <div class="space-y-2"><label
                                             class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                                            for="name">Full Name *</label><input
+                                            for="name">Full Name *</label><input name="name"
                                             class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                                            id="name" placeholder="John Smith" required="" value=""></div>
+                                            id="name" placeholder="John Smith" required></div>
                                     <div class="space-y-2"><label
                                             class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                                            for="email">Email Address *</label><input type="email"
+                                            for="email">Email Address *</label><input type="email" name="email"
                                             class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                                            id="email" placeholder="john@company.com" required="" value=""></div>
+                                            id="email" placeholder="john@company.com" required></div>
                                 </div>
                                 <div class="grid sm:grid-cols-2 gap-4">
                                     <div class="space-y-2"><label
                                             class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                                            for="phone">Phone Number</label><input type="tel"
+                                            for="phone">Phone Number</label><input type="tel" name="phone"
                                             class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                                            id="phone" placeholder="+1 (555) 123-4567" value=""></div>
+                                            id="phone" placeholder="+1 (555) 123-4567"></div>
                                     <div class="space-y-2"><label
                                             class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                                            for="companySize">Company Size *</label><button type="button"
-                                            role="combobox" aria-controls="radix-:rd:" aria-expanded="false"
-                                            aria-required="true" aria-autocomplete="none" dir="ltr" data-state="closed"
-                                            data-placeholder=""
-                                            class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&amp;&gt;span]:line-clamp-1"
-                                            id="companySize"><span style="pointer-events: none;">Select size</span><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="lucide lucide-chevron-down h-4 w-4 opacity-50"
-                                                aria-hidden="true">
-                                                <path d="m6 9 6 6 6-6"></path>
-                                            </svg></button><select aria-hidden="true" required="" tabindex="-1"
-                                            style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
-                                            <option value="1-10">1-10 employees</option>
-                                            <option value="11-50">11-50 employees</option>
-                                            <option value="51-200">51-200 employees</option>
-                                            <option value="201-500">201-500 employees</option>
-                                            <option value="501-1000">501-1000 employees</option>
-                                            <option value="1000+">1000+ employees</option>
-                                        </select></div>
+                                            for="companySize">Company Size *</label>
+                                        <select name="company_size" id="companySize" required
+                                            class="flex h-10 w-full items-center rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 appearance-none"
+                                            style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%239ca3af%22 stroke-width=%222%22><path d=%22m6 9 6 6 6-6%22/></svg>'); background-repeat: no-repeat; background-position: right 0.75rem center;">
+                                            <option value="" disabled selected>Select size</option>
+                                            <option value="1-10 employees">1-10 employees</option>
+                                            <option value="11-50 employees">11-50 employees</option>
+                                            <option value="51-200 employees">51-200 employees</option>
+                                            <option value="201-500 employees">201-500 employees</option>
+                                            <option value="501-1000 employees">501-1000 employees</option>
+                                            <option value="1000+ employees">1000+ employees</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="space-y-2"><label
                                         class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                                        for="industry">Industry *</label><input
+                                        for="industry">Industry *</label><input name="industry"
                                         class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
                                         id="industry" placeholder="e.g., Manufacturing, Oil &amp; Gas, Logistics"
-                                        required="" value=""></div>
+                                        required></div>
                                 <div class="space-y-2"><label
                                         class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                                        for="message">How can we help? *</label><textarea
+                                        for="message">How can we help? *</label><textarea name="message"
                                         class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                                         id="message"
                                         placeholder="Tell us about your current challenges and what you're looking for..."
-                                        rows="4" required=""></textarea></div><button
-                                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 shadow-soft hover:shadow-elevated h-14 rounded-xl px-8 text-base w-full"
+                                        rows="4" required></textarea></div><button
+                                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 shadow-soft hover:shadow-elevated h-14 rounded-xl px-8 text-base w-full"
                                     type="submit">Request Free Consultation<svg xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
