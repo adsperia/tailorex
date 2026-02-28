@@ -1,0 +1,30 @@
+/* ===================================
+   TailoRex — Custom Styles
+   =================================== */
+
+/* Google Fonts — Outfit */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* CSS Custom Properties */
+:root {
+    --gradient-hero: linear-gradient(135deg, hsl(195 7% 22%) 0%, hsl(195 7% 28%) 50%, hsl(195 7% 24%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(13 48% 97%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(358 70% 42%) 0%, hsl(357 76% 50%) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(195 7% 20%) 0%, hsl(195 7% 28%) 100%);
+}
+
+/* Gradient utilities */
+.bg-hero-gradient {
+    background: var(--gradient-hero);
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Active nav link */
+.nav-link-active {
+    color: #2563eb;
+    font-weight: 600;
+}
