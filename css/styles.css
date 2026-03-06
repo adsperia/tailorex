@@ -59,6 +59,21 @@ html {
     animation: fade-up 0.6s ease-out forwards;
 }
 
+/* When JS enables viewport-based animation, wait until element is visible */
+body.animate-on-scroll .animate-fade-up {
+    opacity: 0;
+    animation: none;
+}
+
+body.animate-on-scroll .animate-fade-up.is-visible {
+    animation: fade-up 0.6s ease-out forwards;
+}
+
+/* Optional utility to keep paired text/image entries synchronized */
+body.animate-on-scroll .sync-fade-group>.grid .animate-fade-up.is-visible {
+    animation-delay: 0s !important;
+}
+
 /* Active nav link */
 .nav-link-active {
     color: #2563eb;

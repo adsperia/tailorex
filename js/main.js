@@ -6,6 +6,38 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('TailoRex loaded');
 
+    // ——— Viewport Fade-Up Animation ———
+    const animatedElements = document.querySelectorAll('.animate-fade-up');
+    if (animatedElements.length > 0) {
+        document.body.classList.add('animate-on-scroll');
+
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const revealAll = () => {
+            animatedElements.forEach((element) => element.classList.add('is-visible'));
+        };
+
+        if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+            revealAll();
+        } else {
+            const animationObserver = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (!entry.isIntersecting) return;
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    });
+                },
+                {
+                    root: null,
+                    threshold: 0.15,
+                    rootMargin: '0px 0px -10% 0px'
+                }
+            );
+
+            animatedElements.forEach((element) => animationObserver.observe(element));
+        }
+    }
+
     // ——— Evolution Panels Accordion ———
     const container = document.getElementById('evolution-panels');
     if (container) {

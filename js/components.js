@@ -86,7 +86,7 @@
   function buildFooter() {
     const year = new Date().getFullYear();
     return `
-      <footer class="py-12 bg-hero-gradient text-primary-foreground">
+      <footer class="py-12 bg-hero-gradient text-primary-foreground animate-fade-up" style="animation-delay: 0.05s;">
         <div class="container mx-auto px-4">
           <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-6 text-center md:text-left">
             <div class="flex items-center justify-center md:justify-start gap-4">
