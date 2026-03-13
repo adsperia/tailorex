@@ -53,9 +53,9 @@
                         How It Works</a></div>
             </div>
         </section>
-        <section class="py-20 bg-background overflow-hidden">
+        <section class="py-20 bg-background">
             <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
+                <div class="max-w-4xl mx-auto text-center mb-16">
                     <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">If your
                         current ERP isn't accelerating your growth, <span class="text-primary">it's holding you
                             back.</span></h2>
@@ -66,172 +66,82 @@
                     <p class="text-lg text-muted-foreground max-w-3xl mx-auto text-center mt-4">Digital Evolution is
                         when technology enables measurable changes in:</p>
                 </div>
-                <div class="max-w-6xl mx-auto animate-fade-up" style="animation-delay: 0.2s;">
-                    <div class="hidden md:flex gap-2 h-[340px]" id="evolution-panels">
-                        <div class="relative rounded-2xl border border-border cursor-pointer transition-all duration-700 ease-out overflow-hidden group flex-[3]"
-                            style="background: linear-gradient(135deg, hsl(var(--primary) / 0.12), hsl(var(--primary) / 0.04));">
-                            <span
-                                class="absolute top-4 right-4 font-display font-bold transition-all duration-700 text-6xl text-primary/20">01</span>
-                            <div
-                                class="absolute inset-0 flex flex-col items-center justify-center gap-3 transition-opacity duration-500 px-3 opacity-0 pointer-events-none">
-                                <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-trending-up w-6 h-6 text-primary">
-                                        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
-                                        <polyline points="16 7 22 7 22 13"></polyline>
-                                    </svg></div><span
-                                    class="text-base font-semibold text-foreground text-center leading-tight">Business
-                                    Model</span>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex flex-col justify-center p-8 transition-opacity duration-700 opacity-100">
-                                <div class="w-14 h-14 rounded-xl bg-primary/15 flex items-center justify-center mb-5">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+                        <div class="rounded-2xl border border-blue-200/70 bg-card p-6 min-h-0 md:min-h-[290px] flex flex-col text-center">
+                            <h3 class="font-display text-xl font-bold text-foreground mb-3">Business Model</h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed">New revenue streams -
+                                subscriptions, service bundles, self-service portals.</p>
+                            <div class="mt-auto pt-6 flex justify-center">
+                                <div class="w-14 h-14 rounded-full bg-blue-100 border border-blue-200 flex items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-trending-up w-7 h-7 text-primary">
+                                        stroke-linejoin="round" class="lucide lucide-trending-up w-7 h-7 text-blue-600">
                                         <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
                                         <polyline points="16 7 22 7 22 13"></polyline>
                                     </svg>
                                 </div>
-                                <h3 class="font-display text-2xl font-bold text-foreground mb-3">Business Model</h3>
-                                <p class="text-muted-foreground leading-relaxed max-w-md">New revenue streams —
-                                    subscriptions, service bundles, self-service portals.</p>
-                                <div class="mt-5 w-12 h-1 rounded-full bg-primary/40"></div>
                             </div>
                         </div>
-                        <div
-                            class="relative rounded-2xl border border-border cursor-pointer transition-all duration-700 ease-out overflow-hidden group flex-1">
-                            <span
-                                class="absolute top-4 right-4 font-display font-bold transition-all duration-700 text-4xl text-muted-foreground/10">02</span>
-                            <div
-                                class="absolute inset-0 flex flex-col items-center justify-center gap-3 transition-opacity duration-500 px-3 opacity-100">
-                                <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-workflow w-6 h-6 text-primary">
-                                        <rect width="8" height="8" x="3" y="3" rx="2"></rect>
-                                        <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
-                                        <rect width="8" height="8" x="13" y="13" rx="2"></rect>
-                                    </svg></div><span
-                                    class="text-base font-semibold text-foreground text-center leading-tight">Processes</span>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex flex-col justify-center p-8 transition-opacity duration-700 opacity-0 pointer-events-none">
-                                <div class="w-14 h-14 rounded-xl bg-primary/15 flex items-center justify-center mb-5">
+                        <div class="rounded-2xl border border-slate-300/70 bg-card p-6 min-h-0 md:min-h-[290px] flex flex-col text-center">
+                            <h3 class="font-display text-xl font-bold text-foreground mb-3">Processes</h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed">Faster, simpler workflows -
+                                automation, fewer handoffs, real-time approvals.</p>
+                            <div class="mt-auto pt-6 flex justify-center">
+                                <div class="w-14 h-14 rounded-full bg-slate-100 border border-slate-300 flex items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-workflow w-7 h-7 text-primary">
+                                        stroke-linejoin="round" class="lucide lucide-workflow w-7 h-7 text-slate-700">
                                         <rect width="8" height="8" x="3" y="3" rx="2"></rect>
                                         <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
                                         <rect width="8" height="8" x="13" y="13" rx="2"></rect>
                                     </svg>
                                 </div>
-                                <h3 class="font-display text-2xl font-bold text-foreground mb-3">Processes</h3>
-                                <p class="text-muted-foreground leading-relaxed max-w-md">Faster, simpler workflows —
-                                    automation, fewer handoffs, real-time approvals.</p>
-                                <div class="mt-5 w-12 h-1 rounded-full bg-primary/40"></div>
                             </div>
                         </div>
-                        <div
-                            class="relative rounded-2xl border border-border cursor-pointer transition-all duration-700 ease-out overflow-hidden group flex-1">
-                            <span
-                                class="absolute top-4 right-4 font-display font-bold transition-all duration-700 text-4xl text-muted-foreground/10">03</span>
-                            <div
-                                class="absolute inset-0 flex flex-col items-center justify-center gap-3 transition-opacity duration-500 px-3 opacity-100">
-                                <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-users w-6 h-6 text-primary">
-                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
-                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                    </svg></div><span
-                                    class="text-base font-semibold text-foreground text-center leading-tight">Customer
-                                    Experience</span>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex flex-col justify-center p-8 transition-opacity duration-700 opacity-0 pointer-events-none">
-                                <div class="w-14 h-14 rounded-xl bg-primary/15 flex items-center justify-center mb-5">
+                        <div class="rounded-2xl border border-red-200/80 bg-card p-6 min-h-0 md:min-h-[290px] flex flex-col text-center">
+                            <h3 class="font-display text-xl font-bold text-foreground mb-3">Customer Experience</h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed">Better visibility and responsiveness
+                                - order tracking, instant quotes, proactive updates.</p>
+                            <div class="mt-auto pt-6 flex justify-center">
+                                <div class="w-14 h-14 rounded-full bg-red-100 border border-red-200 flex items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-users w-7 h-7 text-primary">
+                                        stroke-linejoin="round" class="lucide lucide-users w-7 h-7 text-red-600">
                                         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                         <circle cx="9" cy="7" r="4"></circle>
                                         <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                         <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                                     </svg>
                                 </div>
-                                <h3 class="font-display text-2xl font-bold text-foreground mb-3">Customer Experience
-                                </h3>
-                                <p class="text-muted-foreground leading-relaxed max-w-md">Better visibility and
-                                    responsiveness — order tracking, instant quotes, proactive updates.</p>
-                                <div class="mt-5 w-12 h-1 rounded-full bg-primary/40"></div>
                             </div>
                         </div>
-                        <div
-                            class="relative rounded-2xl border border-border cursor-pointer transition-all duration-700 ease-out overflow-hidden group flex-1">
-                            <span
-                                class="absolute top-4 right-4 font-display font-bold transition-all duration-700 text-4xl text-muted-foreground/10">04</span>
-                            <div
-                                class="absolute inset-0 flex flex-col items-center justify-center gap-3 transition-opacity duration-500 px-3 opacity-100">
-                                <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-chart-column w-6 h-6 text-primary">
-                                        <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
-                                        <path d="M18 17V9"></path>
-                                        <path d="M13 17V5"></path>
-                                        <path d="M8 17v-3"></path>
-                                    </svg></div><span
-                                    class="text-base font-semibold text-foreground text-center leading-tight">Data &amp;
-                                    Decisions</span>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex flex-col justify-center p-8 transition-opacity duration-700 opacity-0 pointer-events-none">
-                                <div class="w-14 h-14 rounded-xl bg-primary/15 flex items-center justify-center mb-5">
+                        <div class="rounded-2xl border border-cyan-200/80 bg-card p-6 min-h-0 md:min-h-[290px] flex flex-col text-center">
+                            <h3 class="font-display text-xl font-bold text-foreground mb-3">Data &amp; Decisions</h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed">Trusted, standardized data driving
+                                action - dashboards, predictive insights, KPI governance.</p>
+                            <div class="mt-auto pt-6 flex justify-center">
+                                <div class="w-14 h-14 rounded-full bg-cyan-100 border border-cyan-200 flex items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-chart-column w-7 h-7 text-primary">
+                                        stroke-linejoin="round" class="lucide lucide-chart-column w-7 h-7 text-cyan-700">
                                         <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                         <path d="M18 17V9"></path>
                                         <path d="M13 17V5"></path>
                                         <path d="M8 17v-3"></path>
                                     </svg>
                                 </div>
-                                <h3 class="font-display text-2xl font-bold text-foreground mb-3">Data &amp; Decisions
-                                </h3>
-                                <p class="text-muted-foreground leading-relaxed max-w-md">Trusted, standardized data
-                                    driving action — dashboards, predictive insights, KPI governance.</p>
-                                <div class="mt-5 w-12 h-1 rounded-full bg-primary/40"></div>
                             </div>
                         </div>
-                        <div
-                            class="relative rounded-2xl border border-border cursor-pointer transition-all duration-700 ease-out overflow-hidden group flex-1">
-                            <span
-                                class="absolute top-4 right-4 font-display font-bold transition-all duration-700 text-4xl text-muted-foreground/10">05</span>
-                            <div
-                                class="absolute inset-0 flex flex-col items-center justify-center gap-3 transition-opacity duration-500 px-3 opacity-100">
-                                <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-network w-6 h-6 text-primary">
-                                        <rect x="16" y="16" width="6" height="6" rx="1"></rect>
-                                        <rect x="2" y="16" width="6" height="6" rx="1"></rect>
-                                        <rect x="9" y="2" width="6" height="6" rx="1"></rect>
-                                        <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
-                                        <path d="M12 12V8"></path>
-                                    </svg></div><span
-                                    class="text-base font-semibold text-foreground text-center leading-tight">Operating
-                                    Model</span>
-                            </div>
-                            <div
-                                class="absolute inset-0 flex flex-col justify-center p-8 transition-opacity duration-700 opacity-0 pointer-events-none">
-                                <div class="w-14 h-14 rounded-xl bg-primary/15 flex items-center justify-center mb-5">
+                        <div class="rounded-2xl border border-indigo-200/80 bg-card p-6 min-h-0 md:min-h-[290px] flex flex-col text-center">
+                            <h3 class="font-display text-xl font-bold text-foreground mb-3">Operating Model</h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed">New ways of working -
+                                cross-functional teams, agile delivery, continuous improvement.</p>
+                            <div class="mt-auto pt-6 flex justify-center">
+                                <div class="w-14 h-14 rounded-full bg-indigo-100 border border-indigo-200 flex items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-network w-7 h-7 text-primary">
+                                        stroke-linejoin="round" class="lucide lucide-network w-7 h-7 text-indigo-600">
                                         <rect x="16" y="16" width="6" height="6" rx="1"></rect>
                                         <rect x="2" y="16" width="6" height="6" rx="1"></rect>
                                         <rect x="9" y="2" width="6" height="6" rx="1"></rect>
@@ -239,102 +149,6 @@
                                         <path d="M12 12V8"></path>
                                     </svg>
                                 </div>
-                                <h3 class="font-display text-2xl font-bold text-foreground mb-3">Operating Model</h3>
-                                <p class="text-muted-foreground leading-relaxed max-w-md">New ways of working —
-                                    cross-functional teams, agile delivery, continuous improvement.</p>
-                                <div class="mt-5 w-12 h-1 rounded-full bg-primary/40"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:hidden space-y-4">
-                        <div class="relative flex items-start gap-5 rounded-xl border border-border p-6 bg-card">
-                            <div class="absolute left-0 top-0 bottom-0 w-1 rounded-l-xl bg-primary/40"></div>
-                            <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-trending-up w-6 h-6 text-primary">
-                                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
-                                    <polyline points="16 7 22 7 22 13"></polyline>
-                                </svg>
-                            </div>
-                            <div><span class="text-xs font-bold text-primary/50 tracking-widest">01</span>
-                                <h3 class="font-display text-lg font-semibold text-foreground mb-1">Business Model</h3>
-                                <p class="text-sm text-muted-foreground">New revenue streams — subscriptions, service
-                                    bundles, self-service portals.</p>
-                            </div>
-                        </div>
-                        <div class="relative flex items-start gap-5 rounded-xl border border-border p-6 bg-card">
-                            <div class="absolute left-0 top-0 bottom-0 w-1 rounded-l-xl bg-primary/40"></div>
-                            <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-workflow w-6 h-6 text-primary">
-                                    <rect width="8" height="8" x="3" y="3" rx="2"></rect>
-                                    <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
-                                    <rect width="8" height="8" x="13" y="13" rx="2"></rect>
-                                </svg>
-                            </div>
-                            <div><span class="text-xs font-bold text-primary/50 tracking-widest">02</span>
-                                <h3 class="font-display text-lg font-semibold text-foreground mb-1">Processes</h3>
-                                <p class="text-sm text-muted-foreground">Faster, simpler workflows — automation, fewer
-                                    handoffs, real-time approvals.</p>
-                            </div>
-                        </div>
-                        <div class="relative flex items-start gap-5 rounded-xl border border-border p-6 bg-card">
-                            <div class="absolute left-0 top-0 bottom-0 w-1 rounded-l-xl bg-primary/40"></div>
-                            <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-users w-6 h-6 text-primary">
-                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                </svg>
-                            </div>
-                            <div><span class="text-xs font-bold text-primary/50 tracking-widest">03</span>
-                                <h3 class="font-display text-lg font-semibold text-foreground mb-1">Customer Experience
-                                </h3>
-                                <p class="text-sm text-muted-foreground">Better visibility and responsiveness — order
-                                    tracking, instant quotes, proactive updates.</p>
-                            </div>
-                        </div>
-                        <div class="relative flex items-start gap-5 rounded-xl border border-border p-6 bg-card">
-                            <div class="absolute left-0 top-0 bottom-0 w-1 rounded-l-xl bg-primary/40"></div>
-                            <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-chart-column w-6 h-6 text-primary">
-                                    <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
-                                    <path d="M18 17V9"></path>
-                                    <path d="M13 17V5"></path>
-                                    <path d="M8 17v-3"></path>
-                                </svg>
-                            </div>
-                            <div><span class="text-xs font-bold text-primary/50 tracking-widest">04</span>
-                                <h3 class="font-display text-lg font-semibold text-foreground mb-1">Data &amp; Decisions
-                                </h3>
-                                <p class="text-sm text-muted-foreground">Trusted, standardized data driving action —
-                                    dashboards, predictive insights, KPI governance.</p>
-                            </div>
-                        </div>
-                        <div class="relative flex items-start gap-5 rounded-xl border border-border p-6 bg-card">
-                            <div class="absolute left-0 top-0 bottom-0 w-1 rounded-l-xl bg-primary/40"></div>
-                            <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-network w-6 h-6 text-primary">
-                                    <rect x="16" y="16" width="6" height="6" rx="1"></rect>
-                                    <rect x="2" y="16" width="6" height="6" rx="1"></rect>
-                                    <rect x="9" y="2" width="6" height="6" rx="1"></rect>
-                                    <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
-                                    <path d="M12 12V8"></path>
-                                </svg>
-                            </div>
-                            <div><span class="text-xs font-bold text-primary/50 tracking-widest">05</span>
-                                <h3 class="font-display text-lg font-semibold text-foreground mb-1">Operating Model</h3>
-                                <p class="text-sm text-muted-foreground">New ways of working — cross-functional teams,
-                                    agile delivery, continuous improvement.</p>
                             </div>
                         </div>
                     </div>
@@ -1581,8 +1395,8 @@
     <!-- Footer -->
     <div id="footer"></div>
 
-    <script src="js/components.js?v=1.2"></script>
-    <script src="js/main.js?v=1.2"></script>
+    <script src="js/components.js?v=1.2.1"></script>
+    <script src="js/main.js?v=1.2.1"></script>
 </body>
 
 </html>
