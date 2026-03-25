@@ -257,33 +257,137 @@
                 </div>
             </div>
         </section>
-        <section class="py-20 bg-background">
-            <div class="container mx-auto px-4">
-                <div class="max-w-6xl mx-auto">
-                    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                        <div class="relative animate-fade-up" style="animation-delay: 0.1s;">
-                            <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-elevated"><img
-                                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&amp;h=600&amp;fit=crop"
-                                    alt="TailorEx team collaborating" class="w-full h-full object-cover"></div>
-                            <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-2xl -z-10"></div>
-                            <div class="absolute -top-6 -left-6 w-24 h-24 bg-primary/5 rounded-2xl -z-10"></div>
+        <section id="our-services" class="relative py-24 overflow-hidden bg-background">
+            <div class="absolute inset-0 pointer-events-none opacity-40"
+                style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cpath fill='none' stroke='%23e5e7eb' stroke-width='0.6' d='M14 0l12 7v14L14 28 2 21V7z'/%3E%3C/svg%3E&quot;); background-size: 28px 49px;">
+            </div>
+            <div class="relative z-10 container mx-auto px-4">
+                <div class="text-center mb-16 md:mb-20 animate-fade-up">
+                    <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">Our Services
+                    </h2>
+                    <p class="text-lg text-muted-foreground max-w-3xl mx-auto">We are not a software vendor. We operate
+                        with complete design freedom to architect custom solutions from the ground up.</p>
+                </div>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-14 gap-x-6 lg:gap-8 max-w-7xl mx-auto">
+                    <!-- Advisory & Diagnosis -->
+                    <div class="relative flex flex-col pt-2 animate-fade-up" style="animation-delay: 0.05s;">
+                        <div
+                            class="flex-1 border-[5px] border-blue-600 rounded-2xl bg-card shadow-elevated flex flex-col overflow-hidden min-h-[280px]">
+                            <div class="pt-4 px-3 pb-2 text-center">
+                                <h3
+                                    class="font-display text-xs sm:text-sm font-bold uppercase tracking-wide text-foreground leading-snug">
+                                    Advisory &amp; Diagnosis</h3>
+                            </div>
+                            <ul class="flex-1 px-4 py-4 space-y-2 text-sm text-muted-foreground text-center">
+                                <li>Process mapping</li>
+                                <li>Bottleneck identification</li>
+                                <li>KPI alignment</li>
+                                <li>Workflow redesign</li>
+                                <li>Governance</li>
+                            </ul>
                         </div>
-                        <div class="animate-fade-up" style="animation-delay: 0.3s;">
-                            <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                                Your business is <span class="text-primary">not a template</span></h2>
-                            <p class="text-lg text-muted-foreground mb-8">We are not a software vendor. We operate with
-                                complete design freedom to architect custom solutions from the ground up. We don't force
-                                your business into a pre-defined box; we build the ERP to fit your unique
-                                operation—ensuring technology serves your goals, not the other way around.</p><a
-                                href="#contact"
-                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 shadow-soft hover:shadow-elevated h-14 rounded-xl px-8 text-base">Get
-                                Started<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-arrow-right w-5 h-5">
-                                    <path d="M5 12h14"></path>
-                                    <path d="m12 5 7 7-7 7"></path>
-                                </svg></a>
+                        <div
+                            class="absolute left-1/2 bottom-0 translate-y-1/2 -translate-x-1/2 w-[72px] h-[72px] rounded-full bg-blue-600 flex items-center justify-center border-[5px] border-background shadow-lg z-10"
+                            aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="text-white">
+                                <path d="M3 3v18h18"></path>
+                                <path d="M18 17V9"></path>
+                                <path d="M13 17V5"></path>
+                                <path d="M8 17v-3"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- ERP & Business Systems -->
+                    <div class="relative flex flex-col pt-2 animate-fade-up" style="animation-delay: 0.12s;">
+                        <div
+                            class="flex-1 border-[5px] border-zinc-800 rounded-2xl bg-card shadow-elevated flex flex-col overflow-hidden min-h-[280px]">
+                            <div class="pt-4 px-3 pb-2 text-center">
+                                <h3
+                                    class="font-display text-xs sm:text-sm font-bold uppercase tracking-wide text-foreground leading-snug">
+                                    ERP &amp; Business Systems</h3>
+                            </div>
+                            <ul class="flex-1 px-4 py-4 space-y-2 text-sm text-muted-foreground text-center">
+                                <li>ERP assessments</li>
+                                <li>Implementation support</li>
+                                <li>Configuration guidance</li>
+                                <li>Enhancement</li>
+                                <li>Reporting</li>
+                                <li>Integrations</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="absolute left-1/2 bottom-0 translate-y-1/2 -translate-x-1/2 w-[72px] h-[72px] rounded-full bg-zinc-800 flex items-center justify-center border-[5px] border-background shadow-lg z-10"
+                            aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="text-white">
+                                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                                <line x1="8" x2="16" y1="21" y2="21"></line>
+                                <line x1="12" x2="12" y1="17" y2="21"></line>
+                                <path d="m7 8 2 2 2-2"></path>
+                                <path d="m15 11-2-2-2 2"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Shop-Floor Digitalization -->
+                    <div class="relative flex flex-col pt-2 animate-fade-up" style="animation-delay: 0.2s;">
+                        <div
+                            class="flex-1 border-[5px] border-red-600 rounded-2xl bg-card shadow-elevated flex flex-col overflow-hidden min-h-[280px]">
+                            <div class="pt-4 px-3 pb-2 text-center">
+                                <h3
+                                    class="font-display text-xs sm:text-sm font-bold uppercase tracking-wide text-foreground leading-snug">
+                                    Shop-Floor Digitalization</h3>
+                            </div>
+                            <ul class="flex-1 px-4 py-4 space-y-2 text-sm text-muted-foreground text-center">
+                                <li>MES-aligned solutions</li>
+                                <li>Data capture</li>
+                                <li>Machine/PLC integration</li>
+                                <li>Traceability</li>
+                                <li>Labels</li>
+                                <li>Operational visibility</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="absolute left-1/2 bottom-0 translate-y-1/2 -translate-x-1/2 w-[72px] h-[72px] rounded-full bg-red-600 flex items-center justify-center border-[5px] border-background shadow-lg z-10"
+                            aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="text-white">
+                                <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                                <path d="M3 3v5h5"></path>
+                                <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path>
+                                <path d="M16 16h5v5"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Analytics & Decision Support -->
+                    <div class="relative flex flex-col pt-2 animate-fade-up" style="animation-delay: 0.28s;">
+                        <div
+                            class="flex-1 border-[5px] border-slate-500 rounded-2xl bg-card shadow-elevated flex flex-col overflow-hidden min-h-[280px]">
+                            <div class="pt-4 px-3 pb-2 text-center">
+                                <h3
+                                    class="font-display text-xs sm:text-sm font-bold uppercase tracking-wide text-foreground leading-snug">
+                                    Analytics &amp; Decision Support</h3>
+                            </div>
+                            <ul class="flex-1 px-4 py-4 space-y-2 text-sm text-muted-foreground text-center">
+                                <li>Dashboards</li>
+                                <li>Exception monitoring</li>
+                                <li>Management reporting</li>
+                                <li>Actionable insights for leadership and solutions</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="absolute left-1/2 bottom-0 translate-y-1/2 -translate-x-1/2 w-[72px] h-[72px] rounded-full bg-slate-500 flex items-center justify-center border-[5px] border-background shadow-lg z-10"
+                            aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="text-white">
+                                <path d="m12 14 4-4"></path>
+                                <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -292,9 +396,8 @@
         <section id="how-it-works" class="relative py-24 overflow-hidden bg-muted/30">
             <div class="relative z-10 container mx-auto px-4">
                 <div class="text-center mb-20 animate-fade-up"><span
-                        class="inline-block px-4 py-1.5 rounded-full bg-primary text-primary-foreground text-sm font-medium mb-4">Our
-                        Services</span>
-                    <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">Our 4-Phase
+                        class="inline-block px-4 py-1.5 rounded-full bg-primary text-primary-foreground text-sm font-medium mb-4">How It Works</span>
+                    <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">The 4-Phase
                         Execution Model</h2>
                     <p class="text-lg text-muted-foreground max-w-2xl mx-auto">A continuous cycle from strategy through
                         optimization—we're with you at every step.</p>
