@@ -1426,13 +1426,9 @@
                         </div>
                         <div class="bg-card rounded-2xl p-8 shadow-elevated border border-border animate-fade-up"
                             style="animation-delay: 0.15s;">
-                            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
-                                <input type="hidden" name="access_key" value="aad82839-e87b-439f-b63e-4fa1680b0bbf">
+                            <form class="space-y-6" data-zapier-form>
                                 <input type="hidden" name="subject" value="New Consultation Request - TailorEx (Home)">
                                 <input type="hidden" name="from_name" value="TailorEx Website">
-                                <input type="hidden" name="redirect" id="redirect-url-home" value="">
-                                <script>document.getElementById('redirect-url-home').value = window.location.origin.replace('http:', 'https:') + '/thanks.html';</script>
-                                <input type="checkbox" name="botcheck" class="hidden" style="display:none">
                                 <div class="grid sm:grid-cols-2 gap-4">
                                     <div class="space-y-2"><label
                                             class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
@@ -1510,7 +1506,7 @@
     <div id="footer"></div>
 
     <script src="js/components.js?v=1.2.2"></script>
-    <script src="js/main.js?v=1.2.2"></script>
+    <script src="js/main.js?v=1.2.4"></script>
 </body>
 
 </html>

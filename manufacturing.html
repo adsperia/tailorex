@@ -705,13 +705,10 @@
                         <div class="absolute -inset-4 bg-accent-gradient rounded-3xl opacity-5 blur-2xl"></div>
                         <div class="relative bg-card rounded-2xl p-8 shadow-elevated border border-border">
                             <h2 class="font-display text-2xl font-bold text-foreground mb-6">Schedule a process evaluation</h2>
-                            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
-                                <input type="hidden" name="access_key" value="aad82839-e87b-439f-b63e-4fa1680b0bbf">
+                            <form class="space-y-6" data-zapier-form>
                                 <input type="hidden" name="subject" value="Manufacturing LP – TailorEx">
                                 <input type="hidden" name="from_name" value="TailorEx Website">
-                                <input type="hidden" name="redirect" id="redirect-url-mfg" value="">
-                                <script>document.getElementById('redirect-url-mfg').value = window.location.origin.replace('http:', 'https:') + '/thanks.html';</script>
-                                <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+                                <input type="hidden" name="industry" value="Manufacturing">
                                 <div class="grid sm:grid-cols-2 gap-4">
                                     <div class="space-y-2"><label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="mfg-name">Full Name *</label><input name="name" id="mfg-name"
                                             class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
@@ -737,10 +734,6 @@
                                             <option value="1000+ employees">1000+ employees</option>
                                         </select>
                                     </div>
-                                </div>
-                                <div class="space-y-2"><label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="mfg-industry">Industry *</label><input name="industry" id="mfg-industry"
-                                        class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                                        placeholder="e.g., Manufacturing, discrete, metal fabrication" required>
                                 </div>
                                 <div class="space-y-2"><label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="mfg-currentErp">Do you currently have an ERP? If yes, which one?</label><input name="current_erp" id="mfg-currentErp"
                                         class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
@@ -770,7 +763,7 @@
     <div id="footer"></div>
 
     <script src="js/components.js?v=1.2.2"></script>
-    <script src="js/main.js?v=1.2.2"></script>
+    <script src="js/main.js?v=1.2.4"></script>
 </body>
 
 </html>

@@ -134,13 +134,9 @@
                         <div class="absolute -inset-4 bg-accent-gradient rounded-3xl opacity-5 blur-2xl"></div>
                         <div class="relative bg-card rounded-2xl p-8 shadow-elevated border border-border">
                             <h2 class="font-display text-2xl font-bold text-foreground mb-6">Request a Consultation</h2>
-                            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
-                                <input type="hidden" name="access_key" value="aad82839-e87b-439f-b63e-4fa1680b0bbf">
+                            <form class="space-y-5" data-zapier-form>
                                 <input type="hidden" name="subject" value="New Contact Form Submission - TailorEx">
                                 <input type="hidden" name="from_name" value="TailorEx Website">
-                                <input type="hidden" name="redirect" id="redirect-url" value="">
-                                <script>document.getElementById('redirect-url').value = window.location.origin.replace('http:', 'https:') + '/thanks.html';</script>
-                                <input type="checkbox" name="botcheck" class="hidden" style="display:none">
                                 <div class="grid md:grid-cols-2 gap-4">
                                     <div><label class="text-sm font-medium text-foreground mb-2 block">Full Name
                                             *</label><input name="name"
@@ -198,7 +194,7 @@
     <div id="footer"></div>
 
     <script src="js/components.js?v=1.2.2"></script>
-    <script src="js/main.js?v=1.2.2"></script>
+    <script src="js/main.js?v=1.2.4"></script>
 </body>
 
 </html>
